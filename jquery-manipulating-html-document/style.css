@@ -3,6 +3,18 @@ body{
     background:#eee;
 }
 
+.red {
+    background-color: red !important;
+}
+
+.green {
+    background-color: green !important;
+}
+
+.blue {
+    background-color: blue !important;
+}
+
 .prod-info-main {
     border: 1px solid #CEEFFF;
     margin-bottom: 20px;
@@ -11,6 +23,7 @@ body{
     padding: 6px;
     -webkit-box-shadow: 0 1px 4px 0 rgba(21,180,255,0.5);
     box-shadow: 0 1px 1px 0 rgba(21,180,255,0.5);
+    min-height: 280px;
 }
 
 .prod-info-main .product-image {
@@ -170,7 +183,8 @@ body{
     background: #a90329;
     display: inline-block;
     font-size: 10px;
-    box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1), inset 0 -1px 0 rgba(0, 0, 0, .07);
+    -webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1), inset 0 -1px 0 rgba(0, 0, 0, .07);
+            box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1), inset 0 -1px 0 rgba(0, 0, 0, .07);
     font-weight: 700;
     border-radius: 50%;
     padding: 2px 4px 3px!important;
