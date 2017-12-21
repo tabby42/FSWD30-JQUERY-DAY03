@@ -1,6 +1,23 @@
+class Product {
+	constructor (name, cat, price, description, tag, imageUrl) {
+		this.name = name;
+		this. cat = cat;
+		this.price = price;
+		this.description = description;
+		this.tag = tag;
+		this.imageUrl = imageUrl;
+	}
+}
+
+var product1 = new Product("MacBook", "laptop", 199, "A Short product description here", "hot", "notebook_apple.png");
+
+var productList = {
+	product1
+}
+console.log(productList);
+
 $(document).ready(function() {
 	var categories = ["Phone", "Tablet", "Laptop"];
-
 	//add classes acoording to product category 
 	//and insert category name
 	var products = $(".prod-info-main");
@@ -29,9 +46,8 @@ $(document).ready(function() {
 	$(document).on('change','#prod-filter select',function(){
 		//get selected option
 		var selected = $( "#prod-filter select" ).val();
-        console.log(selected);
         //hide all products that don't belong to the selected category
-        $.each(products, function( index, value ) {
+        $.each($(".prod-info-main"), function( index, value ) {
 			$(this).show();
         	if (selected === "all") {
 				$(this).show();
